@@ -3,6 +3,7 @@
 
 <head>
 <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <title>TRANSPORT | AL MASA</title>
 <meta name="description" content="AL MASA | GENERAL TRANSPORT | ABU DHABI | We own a large fleet of heavy trucks | We Will Provide all kind of Transportation."/>
 <meta itemprop="name" content="AL MASA | GENERAL TRANSPORT | ABU DHABI "/>
@@ -226,6 +227,94 @@ Innovation is an ongoing process
 
 
 We provide a complete ground transportation services for various businesses. Having a wide range of different vehicles makes us a smart one stop choice for business.
+
+
+<br><br><br><br><br><br><br><br><br>
+
+<!--Form Column-->
+                    
+<div class="column form-column col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h2 class="language" lang="en">Send Message</h2>
+    <h2 class="language" lang="ar"> ارسل رسالة</h2>
+    <!--COntact Form-->
+    <form id="submit-form" action="">
+
+
+
+                    <!--Form Group-->
+                   
+                    <div id="DivErrorMsg" class="Form_ErrorMessge" style="display: none"></div>
+
+                            <div class="inner-box">
+                                    <div class="row clearfix">
+                                        <!--Form Group-->
+                                        <div class="form-portlet">
+                                        <div class="form-group col-md-6 col-xs-12">
+                        
+                        <div class="field-label language" lang="en">Name<span class="required">*</span></div>
+                        <div class="field-label language" lang="ar">الإسم<span class="required">*</span></div>
+                        <div class="fields">
+                            <input name="txtName" type="text" id="txtName" placeholder="Enter Your Name" />
+                        </div>
+                    </div>
+                    <!--Form Group-->
+                    <div class="form-group col-md-6 col-xs-12">
+                        <div class="field-label language" lang="en">Email<span class="required">*</span></div>
+                        <div class="field-label language" lang="ar"> البريد الإلكتروني<span class="required">*</span></div>
+                        <div class="fields">
+                        <input name="CNT_txtEmail" type="text" id="CNT_txtEmail" name="email" value="" placeholder="Your Email" />
+                            </div>
+                    </div>
+                    <!--Form Group-->
+                    <div class="form-group col-md-12 col-xs-12">
+                        <div class="field-label language" lang="en">Message<span class="required">*</span></div>
+                        <div class="field-label language" lang="ar"> الرسالة<span class="required">*</span></div>
+                        <div class="fields">
+                        <textarea name="txtMessage" id="txtMessage" style="height:160px" placeholder="Message"></textarea>
+                            </div>
+                    </div>
+
+                    <!--Form Group-->
+                    <div class="form-group col-md-12 col-xs-12">
+                        <div class="text-right">
+                            <input type="submit" name="btnSubmit" value="Send" onclick="return validatePage();" id="btnSubmit" class="theme-btn btn-style-two" />
+                        </div>
+                    </div>                                            
+                    </div>
+                </div>
+        </div>
+
+
+        <script>
+            $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxMW-N_qHfa0W57tPcc8hAmTeBQOz6TeQj5sIlu4A/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+            //window.location.href="https://google.com"
+            },
+            error:function (err){
+            alert("Something Error")
+            
+            }
+            })
+            })
+            </script>
+        <!--COntact Form-->
+    
+
+
+</div>
+
+</div>
+</div>
+</section>
+
+
 
 
 
