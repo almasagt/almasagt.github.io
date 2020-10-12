@@ -250,7 +250,8 @@
 
 
 <!--Form Column-->
-                    
+
+
 <div class="column form-column col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <h2 class="language" lang="en">Send Message</h2>
     <h2 class="language" lang="ar"> ارسل رسالة</h2>
@@ -272,7 +273,7 @@
                         <div class="field-label language" lang="en">Name<span class="required">*</span></div>
                         <div class="field-label language" lang="ar">الإسم<span class="required">*</span></div>
                         <div class="fields">
-                            <input name="txtName" type="text" id="txtName" placeholder="Enter Your Name" />
+                            <input name="txtName" type="text" id="txtName" placeholder="Enter Your Name" required=""/>
                         </div>
                     </div>
                     <!--Form Group-->
@@ -280,7 +281,7 @@
                         <div class="field-label language" lang="en">Email<span class="required">*</span></div>
                         <div class="field-label language" lang="ar"> البريد الإلكتروني<span class="required">*</span></div>
                         <div class="fields">
-                        <input name="CNT_txtEmail" type="text" id="CNT_txtEmail" name="email" value="" placeholder="Your Email" />
+                        <input name="CNT_txtEmail" type="text" id="CNT_txtEmail" name="email" value="" placeholder="Your Email" required=""/>
                             </div>
                     </div>
 
@@ -289,7 +290,7 @@
                             <div class="field-label language" lang="en">Contact Number <span class="required">*</span></div>
                             <div class="field-label language" lang="ar"> رقم التواصل<span class="required">*</span></div>
                             <div class="fields">
-                                <input name="txtContactNumber" type="text" id="txtContactNumber" placeholder="Your Contact Number" />
+                                <input name="txtContactNumber" type="text" id="txtContactNumber" placeholder="Your Contact Number" required=""/>
                             </div>
                         </div>
                     <!--Form Group-->
@@ -297,7 +298,7 @@
                         <div class="field-label language" lang="en">Message<span class="required">*</span></div>
                         <div class="field-label language" lang="ar"> الرسالة<span class="required">*</span></div>
                         <div class="fields">
-                        <textarea name="txtMessage" id="txtMessage" style="height:160px" placeholder="Message"></textarea>
+                        <textarea name="txtMessage" id="txtMessage" style="height:160px" placeholder="Message" required=""></textarea>
                             </div>
                     </div>
 
@@ -341,6 +342,7 @@
 </div>
 </section>
 
+<marquee onmouseover="this.stop();"  önmouseout="this.start();"><a href="mailto:enquiry@transportalmasa.com" target="_blank" title="ENQUIRY"><b>enquiry@transportalmasa.com</b></a></marquee>
 
 
 
